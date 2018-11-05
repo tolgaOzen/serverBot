@@ -1,15 +1,15 @@
-# Hurriyet Config
+# url Config
 
 [url]
 URL="http://127.0.0.1:3735"
 
 
-# FirebaseConfig
+# programConfig
 [program]
 
 PROGRAM="./Horoscopes"
 
 
-# Echo FrameWork Config
+# path Config
 [path]
 PATH="/Users/tolgaozen/_GOPROJECT/src/Horoscopes"
