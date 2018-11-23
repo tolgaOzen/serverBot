@@ -50,10 +50,11 @@ func ReadConfig() Config {
 	}
 
 	var config Config
+
 	if _, err := toml.DecodeFile(configfile, &config); err != nil {
 		log.Fatal(err)
 	}
-	log.Print(config)
+	//log.Print(config)
 	return config
 }
 
@@ -69,6 +70,7 @@ func check() {
 
 	var httpR = httpOparation{}
 	httpR.status = statusOk
+
 	for {
 
 		{
@@ -81,13 +83,13 @@ func check() {
 				if startExe() {
 					fmt.Println("Yeniden baslasiiiiiin")
 				} else {
-					fmt.Println("olmadi yar")
+					fmt.Println("calismadi")
 				}
 			} else {
 				fmt.Println("sorun yok")
 			}
 
-			time.Sleep(222 * time.Millisecond)
+			time.Sleep(15 * time.Second)
 		}
 
 	}
@@ -112,13 +114,26 @@ func (httpR httpOparation) httpRequest(url string) bool {
 
 func startExe() bool {
 
-	cmd := exec.Command(con.Program.PROGRAM, ">", " &", " 1 &")
+	//gopre.Pre(con.Program)
+
+	cmd := exec.Command(con.Program.PROGRAM)
 	cmd.Dir = con.Path.PATH
+
+	_ , err := os.Stat(cmd.Dir)
+
+	if err != nil{
+
+		fmt.Println(err)
+		log.Fatal("path hatasi")
+
+	}
+
 
 	if err := cmd.Start(); err != nil {
 		fmt.Println("cmd.Start() failed", err)
 		return false
 	}
+
 	return true
 
 }
