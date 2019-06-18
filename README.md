@@ -7,6 +7,8 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/tolgaOzen/serverBot.svg)
 ![GitHub last commit](https://img.shields.io/github/last-commit/tolgaOzen/serverBot.svg)
 
+---
+
 ## usage
 
 #### path, url and  program enter config.toml file
@@ -42,6 +44,7 @@ PATH="/Users/tolgaozen/_GOPROJECT/src/example"
 
 #### and run program
 
+---
 
 ## Author
 
