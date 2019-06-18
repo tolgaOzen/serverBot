@@ -23,7 +23,7 @@ URL="http://127.0.0.1:3735"
 ```toml
 
 [program]
-PROGRAM="./Horoscopes"
+PROGRAM="./exampleProgram"
 
 ```
 
@@ -33,7 +33,7 @@ PROGRAM="./Horoscopes"
 ```toml
 
 [path]
-PATH="/Users/tolgaozen/_GOPROJECT/src/Horoscopes"
+PATH="/Users/tolgaozen/_GOPROJECT/src/example"
 
 ```
 
