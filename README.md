@@ -18,7 +18,7 @@ URL="http://127.0.0.1:3735"
 
 ```
 
->ip address of server
+> ip address of server
 
 ```toml
 
@@ -27,9 +27,8 @@ PROGRAM="./Horoscopes"
 
 ```
 
->program to run
+> program to run
 
----
 
 ```toml
 
@@ -38,7 +37,7 @@ PATH="/Users/tolgaozen/_GOPROJECT/src/Horoscopes"
 
 ```
 
->path of the program to run
+> path of the program to run
 
 
 and run program
