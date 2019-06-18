@@ -40,4 +40,4 @@ PATH="/Users/tolgaozen/_GOPROJECT/src/example"
 > path of the program to run
 
 
-and run program
+####and run program
