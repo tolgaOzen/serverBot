@@ -9,27 +9,36 @@
 
 ## usage
 
-####path, url and  program enter config.toml file
+#### path, url and  program enter config.toml file
 
 ```toml
+
 [url]
 URL="http://127.0.0.1:3735"
+
 ```
 
 >ip address of server
 
 ```toml
+
 [program]
 PROGRAM="./Horoscopes"
+
 ```
 
 >program to run
 
+---
 
 ```toml
+
 [path]
 PATH="/Users/tolgaozen/_GOPROJECT/src/Horoscopes"
+
 ```
 
 >path of the program to run
 
+
+and run program

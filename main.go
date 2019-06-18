@@ -1,13 +1,13 @@
 package main
 
 import (
-	"net/http"
 	"fmt"
-	"time"
-	"os/exec"
-	"os"
 	"github.com/BurntSushi/toml"
 	"log"
+	"net/http"
+	"os"
+	"os/exec"
+	"time"
 )
 
 type status int
@@ -19,6 +19,7 @@ const (
 type httpOparation struct {
 	status status
 }
+
 
 type url struct {
 	URL string
@@ -36,6 +37,7 @@ type Config struct {
 	Url     url
 	Program program
 	Path    path
+
 }
 
 var con Config
@@ -81,12 +83,12 @@ func check() {
 
 			if !request {
 				if startExe() {
-					fmt.Println("Yeniden baslasiiiiiin")
+					fmt.Println("started again")
 				} else {
-					fmt.Println("calismadi")
+					fmt.Println("not work")
 				}
 			} else {
-				fmt.Println("sorun yok")
+				fmt.Println("working")
 			}
 
 			time.Sleep(15 * time.Second)
