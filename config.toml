@@ -1,17 +1,15 @@
 
 # url Config
 
-
 [url]
 URL="http://127.0.0.1:3735"
-
 
 # programConfig
 
 [program]
-PROGRAM="./Horoscopes"
+PROGRAM="./example"
 
 # path Config
 
 [path]
-PATH="/Users/tolgaozen/_GOPROJECT/src/Horoscopes"
+PATH="/Users/tolgaozen/_GOPROJECT/src/example"

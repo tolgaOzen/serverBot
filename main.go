@@ -56,7 +56,7 @@ func ReadConfig() Config {
 	if _, err := toml.DecodeFile(configfile, &config); err != nil {
 		log.Fatal(err)
 	}
-	//log.Print(config)
+
 	return config
 }
 
@@ -116,18 +116,14 @@ func (httpR httpOparation) httpRequest(url string) bool {
 
 func startExe() bool {
 
-	//gopre.Pre(con.Program)
-
 	cmd := exec.Command(con.Program.PROGRAM)
 	cmd.Dir = con.Path.PATH
 
 	_ , err := os.Stat(cmd.Dir)
 
 	if err != nil{
-
 		fmt.Println(err)
-		log.Fatal("path hatasi")
-
+		log.Fatal("path error")
 	}
 
 
